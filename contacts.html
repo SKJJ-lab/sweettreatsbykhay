@@ -79,165 +79,183 @@
 
    
   .contact-header {
-    background: linear-gradient(to top, #fad2c3, #f6d6a7, #59b2a2);
+    background: linear-gradient(to top, hwb(18 81% 1%), #F6D6A7, #59B2A2);
     color: #353839;
     padding: 60px 20px;
     text-align: center;
-  }
-
-  .contact-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-
-  .contact-header h4 {
-    font-weight: 300;
-    font-style: italic;
-    font-size: 1.2rem;
-  }
-
-  .contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    padding: 40px;
-    flex-wrap: wrap;
-    cursor: pointer;
-    background-image: url('pictures.html/tuwuwuw.png');  
-  }
-
-  .contact-item {
-    margin-bottom: 20px;
-    text-align: center;
-    cursor: pointer;
-  }
-
-  .contact-item h3{
-    margin-top: 3.4rem;
-    margin-bottom: 2.4rem;
-    color:#3c2118;
-  }
-
-  .contact-item a{
-    text-decoration: none;
-  }
-
-  .contact-button {
-    display: inline-block;
-    background-color: #f9e1ce;
-    padding: 10px 20px;
-    border-radius: 999px;
-    font-weight: bold;
-    color: #3c2118;
-    margin-bottom: 5px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    font-size: 1.1rem;
-  }
-
-  .contact-button i {
-    margin-right: 8px;
-  }
-
-
-  .styled-contact-box ,.contact-form {
-    background: #f6e5d9;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    flex: 1 1 350px;
-    max-width: 500px;
-    transition: transform 0.3s ease;
-  }
-
-  .styled-contact-box:hover{
-    transform: translateY(-5px)
-  }
-
-  .contact-details:hover,
-  .contact-form:hover {
-    transform: translateY(-5px);
-  }
-
-  .contact-details h3,
-  .contact-form h2 {
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-
-  .form-group {
-    margin-bottom: 20px;
-  }
-
-  label {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 6px;
-  }
-
-  .form-control {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background: #fff;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .form-control:focus {
-    outline: none;
-    border-color: #a0522d;
-    box-shadow: 0 0 0 3px rgba(160, 82, 45, 0.2);
-  }
-
-  .btn-contact {
-    background-color: transparent;
-    color: #5a3e36;
-    border: 2px solid #5a3e36;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .btn-contact:hover {
-    background-color: #ffe4c4;
-  }
-
-  .footer-con {
-    background-color: #3c2118;
-    padding: 1rem 1rem;
-    text-align: center;
-    font-family: 'Georgia', serif;
-    font-size: 0.9rem;
-    color: white; 
-  }
-
-  @media (max-width: 768px) {
-    .navbar-toggler {
-      display: block;
-  }
-
-  .nav-collapse {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-    gap: 1rem;
-  }
-
-  .nav-collapse.active {
-    display: flex;
     }
-  }
+  
+    .contact-header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+  
+    .contact-header h4 {
+      font-weight: 300;
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+  
+    .contact-container {
+      display: flex;
+      background-image: url('./images/background.png');
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+  
+    .styled-contact-box, .contact-form {
+      background:#faf1e8;
+      height: 400px;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+      flex: 1 1 350px;
+      max-width: 500px;
+      transition: transform 0.3s ease;
+    }
+  
+    .styled-contact-box:hover, .contact-form:hover {
+      transform: translateY(-5px);
+    }
+  
+    .contact-item {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .contact-button {
+      display: inline-block;
+      background-color: #f9e1ce;
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-weight: bold;
+      color: #3c2118;
+      margin-bottom: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+  
+    .contact-button:hover {
+      background-color: #f3c8b1;
+    }
+  
+    .contact-button i {
+      margin-right: 8px;
+    }
+  
+    .contact-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 600;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+    }
+  
+    label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+  
+    .form-control {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #fff;
+      font-family: 'Montserrat', sans-serif;
+      transition: box-shadow 0.3s;
+    }
+  
+    .form-control:focus {
+      outline: none;
+      border-color: #a0522d;
+      box-shadow: 0 0 0 3px rgba(160, 82, 45, 0.2);
+    }
+  
+    .btn-contact {
+      background-color: #5a3e36;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 25px;
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+  
+    .footer-con {
+      background-color: #3c2118;
+      padding: 1rem;
+      text-align: center;
+      font-family: 'Georgia', serif;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    .footer-con a {
+      color: #ffe9c4;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .footer-con a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: #ffe9c4;
+      transition: width 0.3s ease;
+    }
+
+    .footer-con a:hover::after {
+      width: 100%;
+    }
+
+    .footer-con a:hover {
+      color: #ffdf9e;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  
+    @media (max-width: 768px) {
+      .navbar-toggler {
+        display: block;
+      }
+  
+      .nav-collapse {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        gap: 1rem;
+      }
+  
+      .nav-collapse.active {
+        display: flex;
+      }
+    }
 </style>
 <body>
 <header>
   <nav class="navbar">
     <div class="navbar-wrapper" id="navbarWrapper">
       <div class="brand">
-        <img src="pictures.html/2.png" alt="Logo" />
+        <img src="/images/2.png" alt="Logo" />
         <span>CONTACT</span>
       </div>
 
@@ -310,6 +328,7 @@
   <footer class="footer-con">
     <div class="container">
       <small>&copy; 2024 Sweet Treats by Khay</small>
+      <p>Website by <a href="developers.html">Code and Cakes</a></p>
     </div>
   </footer>
 

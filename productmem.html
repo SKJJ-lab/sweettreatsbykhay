@@ -233,6 +233,47 @@ body {
       }
     }
 
+    .footer-con {
+      background-color: #3c2118;
+      padding: 1rem;
+      text-align: center;
+      font-family: 'Georgia', serif;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    .footer-con a {
+      color: #ffe9c4;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .footer-con a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: #ffe9c4;
+      transition: width 0.3s ease;
+    }
+
+    .footer-con a:hover::after {
+      width: 100%;
+    }
+
+    .footer-con a:hover {
+      color: #ffdf9e;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
 
 </style>
 <body>
@@ -240,7 +281,7 @@ body {
         <nav class="navbar">
           <div class="navbar-wrapper" id="navbarWrapper">
             <div class="brand">
-              <img src="pictures.html/2.png" alt="Logo" />
+              <img src="images/2.png" alt="Logo"/>
               <span>PRODUCTS</span>
             </div>
       
@@ -264,7 +305,7 @@ body {
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="pictures.html/one.png">
+              <img src="/images/one.png" alt="Cake">
               <div class="product-info">
                 <h3>Customized Cocomelon Chocolate Cake</h3>
                 <p>Rich and moist with delicious fondant.</p>
@@ -272,7 +313,7 @@ body {
             </div>
 
             <div class="swiper-slide">
-              <img src="pictures.html/two.png" alt="Cake">
+              <img src="/images/two.png" alt="Cake">
               <div class="product-info">
                 <h3>Little Mermaid Chocolate Cake</h3>
                 <p>Perfect for birthdays and celebrations.</p>
@@ -280,7 +321,7 @@ body {
             </div>
 
             <div class="swiper-slide">
-              <img src="pictures.html/three.png" alt="Cookies">
+              <img src="/images/three.png" alt="Cookies">
               <div class="product-info">
                 <h3>Mocha Cake</h3>
                 <p>Touch of gold for a 50 years of existence!</p>
@@ -288,7 +329,7 @@ body {
             </div>
 
             <div class="swiper-slide">
-              <img src="pictures.html/four.png">
+              <img src="/images/four.png" alt="cake">
               <div class="product-info">
                 <h3>Kuromi for a baby!</h3>
                 <p>Cute like Kuromi!</p>
@@ -296,7 +337,7 @@ body {
             </div>
 
             <div class="swiper-slide">
-              <img src="pictures.html/five.png">
+              <img src="/images/five.png" alt="cake">
               <div class="product-info">
                 <h3>Mickey Mouse</h3>
                 <p>Chocolatey and milky cake!</p>
@@ -304,7 +345,7 @@ body {
             </div>
 
             <div class="swiper-slide">
-              <img src="pictures.html/six.png">
+              <img src="/images/six.png" alt="cake">
               <div class="product-info">
                 <h3>Labubu Cake</h3>
                 <p>Cute Labubu!</p>
@@ -323,7 +364,7 @@ body {
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="pictures.html/a.png">
+                <img src="/images/a.png" alt="cupcake">
                   <div class="product-info">
                     <h3>Cocomelon CupCake</Canvas></h3>
                     <p>Rich and moist with creamy icing.</p>
@@ -331,7 +372,7 @@ body {
               </div>
 
                 <div class="swiper-slide">
-                  <img src="pictures.html/b.png" alt="Cake">
+                  <img src="/images/b.png" alt="Cake">
                   <div class="product-info">
                     <h3>Kuromi CupCake</h3>
                     <p>Perfect for birthdays and celebrations.</p>
@@ -339,7 +380,7 @@ body {
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="pictures.html/c.png" alt="Cookies">
+                  <img src="/images/c.png" alt="Cookies">
                   <div class="product-info">
                     <h3>Unicorn CupCkae</h3>
                     <p>Chewy, and oh so good!</p>
@@ -347,7 +388,7 @@ body {
                 </div>
     
                 <div class="swiper-slide">
-                  <img src="pictures.html/d.png">
+                  <img src="/images/d.png" alt="cupcake">
                   <div class="product-info">
                     <h3>Zoo CupCake</h3>
                     <p>Oh! ZOO-delicious!</p>
@@ -355,7 +396,7 @@ body {
                 </div>
     
                 <div class="swiper-slide">
-                  <img src="pictures.html/e.png">
+                  <img src="/images/e.png" alt="cupcake">
                   <div class="product-info">
                     <h3>Astronaut CupCake</h3>
                     <p>Will send you to the outerspacce as you take a bite!</p>
@@ -374,7 +415,7 @@ body {
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="pictures.html/f.png">
+                <img src="/images/f.png" alt="cupcake">
                 <div class="product-info">
                 <h3>Classic Chocolate Donut</h3>
                 <p>Rich and moist with creamy frosting.</p>
@@ -382,7 +423,7 @@ body {
             </div>
 
             <div class="swiper-slide">
-              <img src="pictures.html/g.png" alt="Cake">
+              <img src="/images/g.png" alt="Cake">
               <div class="product-info">
                 <h3>Matcha Donut</h3>
                 <p>Perfect for birthdays and celebrations.</p> 
@@ -390,7 +431,7 @@ body {
             </div>
 
             <div class="swiper-slide">
-              <img src="pictures.html/h.png" alt="Cookies">
+              <img src="/images/h.png" alt="Cookies">
               <div class="product-info">
                 <h3>Matcha Donut</h3>
                 <p>Chewy, and oh so good!</p>
@@ -398,7 +439,7 @@ body {
             </div>
 
             <div class="swiper-slide">
-              <img src="pictures.html/i.png">
+              <img src="/images/i.png" alt="cupcake">
               <div class="product-info">
                 <h3>Strawberry Donut</h3>
                 <p>Sweet and delicious!</p>
@@ -429,11 +470,22 @@ body {
             <p>"Super yummy donuts. My kids can't get enough of them!"</p>
           </div>
         </div>
+    
+        <!-- ✨ Review Form -->
+        <div style="text-align: center; margin-top: 30px;">
+          <h3>Leave a Review</h3>
+          <input type="text" id="reviewerName" placeholder="Your Name" style="padding: 8px; width: 200px; margin: 5px;">
+          <br>
+          <textarea id="reviewText" placeholder="Write your review..." style="padding: 8px; width: 300px; height: 100px; margin: 5px;"></textarea>
+          <br>
+          <button onclick="addReview()" style="padding: 10px 20px; background-color: #6d3b2b; color: white; border: none; border-radius: 8px; cursor: pointer;">Submit</button>
+        </div>
       </section>
       
       <footer class="footer-con">
         <div>
           <small>&copy; 2024 Sweet Treats by Khay</small>
+          <p>Website by <a href="developers.html">Code and Cakes</a></p>
         </div>
       </footer>
       
@@ -468,10 +520,8 @@ body {
             });
           });
         });
-      </script>
       
-
-      <script>
+      
         document.addEventListener("DOMContentLoaded", function () {
           const toggle = document.getElementById("menuToggle");
           const navMenu = document.getElementById("navMenu");
@@ -480,7 +530,33 @@ body {
             navMenu.classList.toggle("active");
           });
         });
-      </script>
+
+        function addReview() {
+      const name = document.getElementById('reviewerName').value.trim();
+      const text = document.getElementById('reviewText').value.trim();
+
+      if (name === '' || text === '') {
+        alert("Please fill in both fields.");
+        return;
+      }
+
+      const reviewList = document.querySelector('.review-list');
+      const reviewBox = document.createElement('div');
+      reviewBox.className = 'review-box';
+
+      const reviewer = document.createElement('h4');
+      reviewer.textContent = `⭐ ${name}`;
+      const review = document.createElement('p');
+      review.textContent = `"${text}"`;
+
+      reviewBox.appendChild(reviewer);
+      reviewBox.appendChild(review);
+      reviewList.appendChild(reviewBox);
+
+      document.getElementById('reviewerName').value = '';
+      document.getElementById('reviewText').value = '';
+    }
+  </script>
       
 </body>
 </html>

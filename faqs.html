@@ -77,7 +77,48 @@ body {
     color: brown;
   }
 
-  @media (max-width: 768px) {
+  .footer-con {
+      background-color: #3c2118;
+      padding: 1rem;
+      text-align: center;
+      font-family: 'Georgia', serif;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    .footer-con a {
+      color: #ffe9c4;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .footer-con a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: #ffe9c4;
+      transition: width 0.3s ease;
+    }
+
+    .footer-con a:hover::after {
+      width: 100%;
+    }
+
+    .footer-con a:hover {
+      color: #ffdf9e;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 768px) {
       .navbar-toggler {
         display: block;
       }
@@ -94,9 +135,6 @@ body {
         display: flex;
       }
     }
-
-    
-    
 
     header h1 {
       margin: 0;
@@ -161,19 +199,47 @@ body {
     line-height: 1.5;
   }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-
-    footer {
-      background: #3a1e14;
-      color: #fff;
+  .footer-con {
+      background-color: #3c2118;
+      padding: 1rem;
       text-align: center;
-      padding: 15px;
-      font-size: 0.85rem;
+      font-family: 'Georgia', serif;
+      font-size: 0.9rem;
+      color: white;
     }
+
+    .footer-con a {
+      color: #ffe9c4;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .footer-con a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: #ffe9c4;
+      transition: width 0.3s ease;
+    }
+
+    .footer-con a:hover::after {
+      width: 100%;
+    }
+
+    .footer-con a:hover {
+      color: #ffdf9e;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
 
 
 </style>
@@ -182,7 +248,7 @@ body {
         <nav class="navbar">
           <div class="navbar-wrapper" id="navbarWrapper">
             <div class="brand">
-              <img src="2.png" alt="Logo" />
+              <img src="images/2.png" alt="Logo" />
               <span>FAQs</span>
             </div>
       
@@ -245,6 +311,7 @@ body {
   <footer class="footer-con">
     <div class="container">
       <small>&copy; 2024 Sweet Treats by Khay</small>
+      <p>Website by <a href="developers.html">Code and Cakes</a></p>
     </div>
   </footer>
 

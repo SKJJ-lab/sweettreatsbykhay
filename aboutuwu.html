@@ -162,17 +162,38 @@
       color: white;
     }
 
-    .fade-in {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 1s ease-out, transform 1s ease-out;
+    .footer-con a {
+      color: #ffe9c4;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
     }
 
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
+    .footer-con a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: #ffe9c4;
+      transition: width 0.3s ease;
     }
 
+    .footer-con a:hover::after {
+      width: 100%;
+    }
+
+    .footer-con a:hover {
+      color: #ffdf9e;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    
     @media (max-width: 768px) {
       .navbar-toggler {
         display: block;
@@ -202,7 +223,7 @@
     <nav class="navbar">
       <div class="navbar-wrapper" id="navbarWrapper">
         <div class="brand">
-          <img src="pictures.html/2.png" alt="Logo" />
+          <img src="images\download.jpg" alt="Logo" />
           <span>ABOUT</span>
         </div>
 
@@ -226,7 +247,7 @@
           <div class="divider"></div>
 
         <div class="image-text-container fade-in">
-          <img src="pictures.html/Bago.jpg" alt="about-background">
+          <img src="/images/Bago.png" alt="about-background">
           <p>Sweet Treats by Khay is a home-based cake shop offering beautifully crafted baked goods for every occasion. From cupcakes and cookies to celebration cakes, each treat is made with care and creativity. The shop also accepts customization requests to match any theme, preference, or special event. Whether it's a birthday, anniversary, or just a craving for something sweet—Sweet Treats by Khay is ready to deliver delightful desserts made with love.</p>
         </div>
 
@@ -242,9 +263,11 @@
     </section>
   </main>
 
+
   <footer class="footer-con">
     <div>
       <small>&copy; 2024 Sweet Treats by Khay</small>
+      <p>Website by <a href="developers.html">Code and Cakes</a></p>
     </div>
   </footer>
 
