@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sweet Treats by Khay</title>
+  <link rel="shortcut icon" href="2.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf8;
+      background-image: url('./images/background.png');
+
+    }
+
+    nav.navbar {
+      background-color: #faf1e8;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 40px;
+    }
+
+    .navbar-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .brand img {
+      width: 30px;
+      margin-right: 10px;
+    }
+
+    .navbar-toggler {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: none;
+    }
+
+    .nav-collapse {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #5e2b1f;
+    }
+
+    .team-section {
+      max-width: 1300px;
+      margin: 50px auto;
+      padding: 50px;
+      background-color: #faf1e8;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-out;
+
+    }
+
+    .team-section h2 {
+      text-align: center;
+      font-size: 2.2em;
+      color: #5e2b1f;
+      margin-bottom: 30px;
+    }
+
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .team-member {
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-member a{
+      color: black;
+    }
+    .team-member:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .team-member img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      object-position: center;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .team-member h3 {
+      font-size: 1.2em;
+      color: #111827;
+      margin-bottom: 5px;
+    }
+
+    .team-member p {
+      color: #6b7280;
+      font-size: 0.95em;
+      margin: 2px 0;
+    }
+
+    .footer-con {
+      background-color: #3c2118;
+      padding: 1rem;
+      text-align: center;
+      font-family: 'Georgia', serif;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    .footer-con a {
+      color: #ffe9c4;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .footer-con a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: #ffe9c4;
+      transition: width 0.3s ease;
+    }
+
+    .footer-con a:hover::after {
+      width: 100%;
+    }
+
+    .footer-con a:hover {
+      color: #ffdf9e;
+      text-shadow: 0 0 5px #ffe0b3;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar-toggler {
+        display: block;
+      }
+
+      .nav-collapse {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .nav-collapse.active {
+        display: flex;
+      }
+
+      .nav-link {
+        padding: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="navbar-wrapper">
+        <div class="brand">
+          <img src="images/2.png" alt="Logo" />
+          <span>HOME</span>
+        </div>
+
+        <button class="navbar-toggler" id="menuToggle">&#9776;</button>
+
+        <ul class="nav-collapse" id="navMenu">
+          <li><a class="nav-link" href="index.html">HOME</a></li>
+          <li><a class="nav-link" href="aboutuwu.html">ABOUT</a></li>
+          <li><a class="nav-link" href="productmem.html">PRODUCT</a></li>
+          <li><a class="nav-link" href="contacts.html">CONTACT</a></li>
+          <li><a class="nav-link" href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="team-section">
+    <h2>Meet the Developers</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="images/sam2.jpg" alt="Sam">
+        <h3>Samantha Paual</h3>
+        <p>Leader</p>
+        <p>&</p>
+        <p>Head Programmer</p>
+        <a href="mailto:samanthapaual@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <div class="team-member">
+        <img src="images/jiro.jpg" alt="Jiro">
+        <h3>Jiro Yee</h3>
+        <p>UI/UX Designer</p>
+        <p>&</p>
+        <p>Video Editor</p>
+        <a href="mailto:jiroyee.1@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <div class="team-member">
+        <img src="images/jerome.jpg" alt="Jerome">
+        <h3>Jerome Calma</h3>
+        <p>Research Coordinator</p>
+        <p>&</p>
+        <p>Assistant Programmer</p>
+        <a href="mailto:jeromecalma052005@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <div class="team-member">
+        <img src="images/kim.jpg" alt="Kimme Charlize Mandap">
+        <h3>Kimme Charlize Mandap</h3>
+        <p>UI/UX Designer</p>
+        <p>&</p>
+        <p>Web Tester</p>
+        <a href="mailto:kimmecharlize522@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-con">
+    <div>
+      <small>&copy; 2024 Sweet Treats by Khay</small>
+      <p>Website by <a href="developers.html">Code and Cakes</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    toggle.addEventListener("click", function () {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
